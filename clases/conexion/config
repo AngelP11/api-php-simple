@@ -1,0 +1,9 @@
+{
+	"conexion": {
+		"server": "localhost",
+		"user": "root",
+		"password": "26973456Angel.",
+		"database": "apiPhp",
+		"port": "3306"
+	}
+}
