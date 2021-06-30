@@ -13,11 +13,14 @@ class auth extends conexion {
         } else {
             $user = $datos["username"];
             $password = $datos["password"];
+            $password = parent::encrypt($password);
 
             $data = $this->getUserData($user);
 
             if ($data) {
-                //todo chill
+                if ($password == $data['password']) {
+
+                }
             } else {
                 return $_respuestas->error_200("El usuario no existe");
             }
